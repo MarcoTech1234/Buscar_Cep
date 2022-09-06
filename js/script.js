@@ -12,11 +12,11 @@ $(document).ready(function() {
         $.ajax({
             type: 'GET',
             dataType: 'JSON',
-            async: true,
+            assync: true,
             url: url,
             success: function(dados) {
                 console.log('Requisição recebida com sucesso!')
-                $('#LOCRADOURA').val(dados.logradoura)
+                $('#LOGRADOURO').val(dados.logradouro)
                 $('#BAIRRO').val(dados.bairro)
                 $('#LOCALIDADE').val(dados.localidade)
                 $('#UF').val(dados.uf)
